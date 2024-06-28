@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body,
+input,
+button {
+    font-family: 'Quicksand', sans-serif;
+    color: rosybrown;
+    font-size: 16px;
+}
+
+
+.head_bar {
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: mistyrose;
+    color: rosybrown;
+}
+
+main {
+    width: 100%;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+.contInput {
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.input {
+    display: inline;
+    padding: 5px;
+}
+
+.input>button {
+    background-color: rosybrown;
+    color: mistyrose;
+    border: 0;
+    border-radius: 10px;
+    padding: 10px 60px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.input>input {
+    padding: 8px;
+    border-radius: 5px;
+    border-color: rosybrown;
+    font-weight: bold;
+}
+
+.input>label {
+    color: rosybrown;
+    font-weight: bold;
+}
+
+.contBook {
+    margin: 25px auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid rosybrown;
+    border-radius: 10px;
+    width: 100%;
+    background-color: mistyrose;
+    max-width: 1200px;
+    text-align: center;
+    overflow: auto;
+}
+
+.rowOne {
+    padding: 0px 0px 20px 0px;
+    text-align: right;
+}
+
+.rowOne>button {
+    background-color: rosybrown;
+    color: mistyrose;
+    border: 0;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.rowOne>input {
+    padding: 7px;
+    border-radius: 5px;
+    border-color: rosybrown;
+    font-weight: bold;
+}
+
+.rowTwo {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.colOne {
+    flex-basis: 50%;
+    border: 1px solid rosybrown;
+    border-radius: 10px;
+    margin-right: 10px;
+    background-color: rosybrown;
+}
+
+.colTwo {
+    flex-basis: 50%;
+    border: 1px solid rosybrown;
+    border-radius: 10px;
+    margin-left: 10px;
+    background-color: rosybrown;
+}
+
+.colOne,
+.colTwo>h2 {
+    color: mistyrose;
+}
+
+.item {
+    border-radius: 10px;
+    margin: 16px;
+    padding: 12px 24px 12px 24px;
+    background: mistyrose;
+    text-align: center;
+    align-items: center;
+}
+
+.item>.inner h2 {
+    color: rosybrown;
+}
+
+.item>.inner p {
+    color: rosybrown;
+}
+
+.shadow {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2), 0 15px 40px rgba(0, 0, 0, .2);
+}
+
+.inList {
+    min-width: 70px;
+    height: 40px;
+    cursor: pointer;
+    color: mistyrose;
+    background-color: rosybrown;
+    border-width: 0;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+#modal {
+    display: none;
+    position: fixed;
+    padding-top: 40vh;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#modal > .cont {
+    border-radius: 10px;
+    border-width: 0;
+    text-align: center;
+    background-color: mistyrose;
+    margin: auto;
+    padding: 40px;
+    width: 40%;
+    min-width: 200px;
+}
+
+.group {
+    padding-top: 10px;
+}
+
+.group > button {
+    min-width: 70px;
+    height: 40px;
+    cursor: pointer;
+    color: mistyrose;
+    background-color: rosybrown;
+    border-width: 0;
+    border-radius: 10px;
+    margin: 5px;
+}

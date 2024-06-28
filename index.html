@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bookshelf Apps</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="head_bar">
+    <h1 class="head_bar__title">BOOKSHELF APPS</h1>
+  </header>
+  <main>
+    <div class="contInput">
+      <form id="inputBook">
+        <div class="input">
+          <input id="bookTitle" placeholder="Title" type="text" required>
+        </div>
+        <div class="input">
+          <input id="bookAuthor" placeholder="Author" type="text" required>
+        </div>
+        <div class="input">
+          <input id="bookYear" placeholder="Year" type="number" required>
+        </div>
+        <div class="input">
+          <label for="isComplete">finished</label>
+          <input id="isComplete" type="checkbox">
+        </div>
+        <div class="input">
+          <button id="bookSubmit" type="submit">ADD</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="contBook">
+      <form id="searchBook">
+        <div class="rowOne">
+          <input id="searchBookTitle" placeholder="Title" type="text">
+          <button id="searchSubmit" type="submit">SEARCH</button>
+        </div>
+      </form>
+
+      <div class="rowTwo">
+
+        <div class="colOne">
+          <h2>UNFINISHED BOOK</h2>
+          <div id="unfinishedBook" class="book_list">
+          </div>
+        </div>
+
+        <div class="colTwo">
+          <h2>FINISHED BOOK</h2>
+          <div id="finishedBook" class="book_list">
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div id="modal">
+      <section class="cont">
+        <h2>Delete Book List</h2>
+        <P>Are you sure?</P>
+          <div class="group">
+            <button id="no">no</button>
+            <button id="yes">yes</button>
+          </div>
+      </section>
+    </div>
+  </main>
+
+  <script src="main.js"></script>
+
+</body>
+
+</html>
